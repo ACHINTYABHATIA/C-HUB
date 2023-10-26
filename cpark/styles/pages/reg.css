@@ -1,0 +1,44 @@
+.container .reg-form {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container .card:hover {
+  scale: 1;
+}
+
+.reg-form span {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+span label {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+span input,
+span select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.25rem;
+}
+
+.submit-btn {
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  cursor: pointer;
+}

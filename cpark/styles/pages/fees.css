@@ -1,0 +1,67 @@
+main{
+    padding-top: 1rem;
+}
+.plan-benefits{
+    display: flex;
+    flex-direction: column;
+    gap: 01.5rem;
+    margin-top: -2rem;
+}
+
+.plan-benefits h3{
+    text-align: left;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+ul{list-style-position: inside;}
+
+.parking-pass{
+    width: 30rem;
+    height: 20rem;
+    border: 1px solid #ddd;
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    justify-content: space-between;
+}
+
+.parking-pass:nth-child(2){
+    background-color: black;
+}
+
+.parking-pass:nth-child(2) *:not(img){
+    color: white;
+}
+
+.parking-pass input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 0.35rem;
+}
+
+.parking-pass:nth-child(2) input{
+    border-bottom: 1px solid #443;
+}
+.parking-pass h2{
+    margin: 0;
+}
+
+.row{
+    align-items: center;
+}
+
+.row div.content{
+    flex: 1;
+}
+
+.row img{
+    width: 5rem;
+    height: 5rem;
+}

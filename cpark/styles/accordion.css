@@ -1,0 +1,55 @@
+.parent-accordion-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+.accordion-container{
+  width: 75rem;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+}
+
+.accordion-container .accordion-heading{
+  height: 5rem;
+  background-color: rgba(0,0,0,0.05);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  cursor: pointer;
+}
+
+.accordion-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.accordion-heading i{
+    font-size: 1.25rem;
+    transition: all 200ms ease-out;
+}
+
+.accordion-heading i.rotated{
+    transform:  rotate(90deg);
+}
+
+.accordion-container .accordion-content{
+    background-color: rgba(0,0,0,0.01);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 250ms ease-out;  
+}
+
+.accordion-container .accordion-content.visible{
+    max-height: 300px;
+    overflow-y:auto ;
+}
+
+.accordion-content p{
+    padding: 1.5rem;
+    font-weight: 400;
+}

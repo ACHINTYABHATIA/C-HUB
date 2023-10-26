@@ -1,0 +1,24 @@
+main{
+    padding-top: 1rem;
+}
+
+.container .row{
+    width: fit-content;
+}
+
+.card{
+    transition: all 200ms ease-out;
+}
+
+.row .card ul{
+    list-style-position: inside;
+}
+
+.card ul li{
+    font-weight: 400;
+}
+
+.card:hover{
+    background-color: rgba(0,0,0,0.75);
+    color: white;
+}

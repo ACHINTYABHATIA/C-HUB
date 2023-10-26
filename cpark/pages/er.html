@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+    <style>
+        *{
+            margin: 0;
+        }
+        
+
+a:visited {
+  color:white
+
+  
+ 
+}
+a:link{
+    color:white;
+     text-decoration: none; 
+}
+
+a:hover {
+  color:white;
+  font-size: 19px;
+}
+
+
+        header{
+        background:rgba(10, 79, 174, 0.849);
+        }
+        .menuitems ul{
+            float: right;
+        }
+        .menuitems{
+            display: inline-block;
+            width:78vw;
+            
+          
+        }
+        .menuitems li{
+            display: inline-block;
+            color:white;
+            margin-right: 2vw;
+            
+        }
+        .logo{
+            display: inline-block;
+            width:20vw;
+            font-size: 26px;
+            letter-spacing: 3px;
+            color:white;
+        }
+        .about{
+            margin-top: 15vh;
+        margin-left: 1%;
+            display: block;
+        }
+        .aboutimage{
+            display: inline-block;
+            float:left;
+            
+            width:33vw;
+            height:300px;
+            
+            
+        }
+        .aboutpara{
+            display:flexbox;
+            color:rgb(5, 5, 5);
+            text-align: top;
+            width:50vw;
+            float:left;
+            font-size: 20px;
+            margin-left: 95px;
+            margin-top: -20px;
+           
+
+            
+        }
+       
+        .services{
+            margin-top: 5vw;
+            background-color: rgb(161, 183, 211);
+            height:80vh;
+            margin-bottom: 6vw;
+            padding-top: 5%;
+        }
+        
+        .aboutimage img{
+            height:100%;
+            width: 100%;
+        }
+        
+        .insider1{
+             display: inline-block;
+             width:28vw;
+             height:15vw;
+             margin-right: 1vw;
+             margin-left: 6vw;
+             
+             
+
+        }
+        .insider2{
+             display: inline-block;
+             width:28vw;
+             height:15vw;
+             margin-right: 1vw;     
+             
+        }
+        .insider3{
+             display: inline-block;
+             width:28vw;
+             height:15vw;
+        }
+        .insider4{
+             display: inline-block;
+             width:28vw;
+             height:19vw;
+             margin-right: 1vw;
+             margin-left: 6vw;
+             
+
+        }
+        .insider5{
+             display: inline-block;
+             width:28vw;
+             height:19vw;
+             margin-right: 1vw;     
+             
+        }
+        .insider6{
+             display: inline-block;
+             width:28vw;
+             height:19vw;
+        }
+        .portfolio{
+            margin-bottom: 5%;
+        }
+        .portfolio img{
+            margin-left:2.3%;
+            margin-top: 2.3%;
+        }
+        .pbutton{
+            text-align: center;
+            margin-top: 3%;
+            height:6vw;
+        }
+        .pbutton button{
+            margin-right: 2vw;
+            background-color: rgb(161, 183, 211);
+            height: 50%;
+            padding: auto;
+            color:white;
+            text-decoration: solid;
+            border-color: white;
+            border-radius: 3px;
+            
+        }
+        .pbutton button:hover{
+            color: rgb(161, 183, 211);
+            background-color:white;
+            border-color: rgb(161, 183, 211);;
+
+        }
+        .testimonials{
+            
+            background-color:rgb(161, 183, 211);
+            height: 500px;
+            text-align: center;     
+            font-size: 18px;
+            margin-bottom: 8%;
+            padding-top: 5%;
+        }
+        .intest{
+            margin-top: 5%;
+            background-color: rgb(190, 197, 216);
+            width: 100%;
+            
+        }
+        .intest h2{
+            color: rgb(67, 63, 131);
+        }
+        .intest div{
+            margin-right: 5%;
+        }
+        .blog{
+            margin-left: 8%;
+            margin-right: 6%;
+            margin-bottom: 6%;
+        }
+        .insideblog  div{
+            display: inline-block;
+            width:25vw;
+            height: 26vw;
+            margin-right: 2vw;
+            border: solid;
+            border-color: black;
+            box-shadow: 2.5px 2.5px rgb(58, 56, 56);
+        }
+        .insideblog div img{
+            width:100%;
+            height:60%;
+        }
+        .insideblog div a{
+            color:black;
+        }
+        .contact{
+            text-align: center;
+            background-color:  rgb(161, 183, 211);
+            padding-top: 5%;
+            height:100%px;
+        }
+        .in{
+            display: inline-block;
+            width:15vw;
+            background-color: white;
+            /* border:1px solid; */
+            margin-right: 3vw;
+            padding: 1%;
+            box-shadow: 5px 5px rgb(202, 222, 248) ;
+        }
+        .in a{
+            color: black;
+            font-size: 16px;
+        }
+        .in a:hover{
+            color: black;
+            font-size: 16px;
+            text-decoration:underline;
+        }
+        .insidecontact{
+            margin-top: 3%;
+            margin-bottom: 3%;
+            padding: 6%;
+            padding-left: 7.5%;
+            
+        }
+        .insidecontact form{
+            width:90%;
+            padding-top:7%;
+            padding-bottom:7%;
+            margin-bottom: 3%;
+            
+            text-align: center;
+            background-color: whitesmoke;
+            box-shadow: 9px 9px 13px 6px rgb(202, 222, 248) ;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">PORTFOLIO</div>
+        <div  class="menuitems">
+        <ul>
+            <li><a href="er.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="er.html">PORTFOLIO</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>  
+        </div>
+        
+    </header>
+    <div class="about" id="about">
+        <div class="aboutimage"><img src="chitkarauniversity.jpg"  ></div>
+        <div class="aboutpara"><h1 ><u>ABOUT ME</u></h1><br>Hello, I'm <strong>Achintya Bhatia</strong>, and I'm currently a college student(chitkarauniversity) with a passion for web development. My journey into the world of coding and design began during my high school years when I discovered the incredible potential of the web to connect people and ideas. Now, as a college student, I've taken my love for web development to the next level. I'm constantly immersed in the fascinating world of programming languages, front-end and back-end development, and user experience design. My goal is to not only create visually stunning and user-friendly websites but also to solve complex problems through elegant code. When I'm not in class or coding, you'll often find me collaborating with fellow students on exciting web projects or exploring the latest trends and technologies in the ever-evolving web development landscape. I thrive on challenges, embrace learning opportunities, and look forward to contributing my skills to the digital future. </div>
+        <div style="clear:both"></div>
+    </div>
+    
+    <div class="services" id="services">
+        <h1 style="text-align: center;"><u>MY SERVICES</u></h1><br><br><br>
+        <div class="insideser">
+            <div class="insider1"><img src="Java.jpg" height="60px" width="60px">
+            <h4>Java</h4>
+        <p>Java programs are compiled into an intermediate bytecode that can run on any platform with a Java Virtual Machine (JVM). This "write once, run anywhere" principle makes Java highly portable.</p></div>
+        <div class="insider2"><img src="python.jpg" height="60px" width="60px">
+            <h4>Python</h4>
+        <p> Python's simplicity, readability, versatility, and a vast ecosystem of libraries and frameworks make it a popular choice for a wide range of applications, from web development and data analysis to scientific research and artificial intelligence.</p></div>
+            <div class="insider3"><img src="cplus.jpg"   height="60px" width="60px">
+                <h4>C++</h4>
+            <p>C++ has a strong and active community of developers who contribute to its evolution, share knowledge, and provide support through forums, conferences, and online resources.</p></div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="insideser2">
+            <div class="insider4"><img src="c.jpg" height="60px" width="60px">
+            <h4>C</h4>
+        <p> code can be compiled and run on various platforms with minimal modification, making it highly portable.</p></div>
+        <div class="insider5"><img src="perl.jpg" height="60px" width="60px">
+            <h4>Perl</h4>
+        <p>Perl's concise syntax and powerful text-processing capabilities have made it a popular choice for tasks involving data manipulation and scripting. While it's been somewhat overshadowed by newer languages for web development</p></div>
+            <div class="insider6"><img src="sql.jpg"   height="60px" width="60px">
+                <h4>SQL</h4>
+            <p>SQL supports data integrity constraints, including primary keys, foreign keys, unique constraints, and check constraints, to ensure data accuracy and consistency.
+
+                Joins: SQL enables you to combine data from multiple tables using JOIN operations, allowing you to retrieve related information from different parts of a database</p></div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    
+    <div class="portfolio" id="portfolio">
+    <h1 style="text-align: center;"><u>MY PORTFOLIO</u></h1>
+    <div class="pbutton"><button>ABCDEF</button><button>ABCF</button><button>ABCDEkhkjhF</button><button>ABCDF</button><button>ABCDEF</button></div>
+    <img src="4.jpg" height="20%" width="30%">
+    <img src="2.jpg" height="20%" width="30%">
+    <img src="3.jpg" height="20%" width="30%">
+    <img src="5.jpg" height="20%" width="30%">
+    <img src="6.JPG" height="20%" width="30%">
+    <img src="8.jpg" height="20%" width="30%">
+    </div>
+
+    <div class="testimonials" id="testimonials">
+        <H1 style="text-align:center; text-decoration:underline;margin-bottom: 25px;">CLIENTS SAY</H1>
+        <p style="margin-left: 15%;margin-right: 15%;">I recently had the pleasure of working with achintya, and I must say, the experience exceeded my expectations in every way.
+
+            From the very beginning, his communication was outstanding. He took the time to truly understand my project requirements and goals. This initial consultation was a breath of fresh air compared to previous experiences I've had with other web development firms.</p>
+        <img src="/chitkarauniversity.jpg" style="margin-top:10px;border-radius:60%;width:8vw;height:8vw;">
+        <h3>LISA RAY</h3>
+        <p>INFOSYS</p>
+        <div class="intest">
+            <div style="display: inline-block;"><img src="clock2.jpg" height="50px">
+            <h2>278</h2><p>Hours Worked</p></div>
+            <div style="display: inline-block;"><img src="coffee.jpg" height="52px">
+                <h2>18</h2><p>Cups of Coffee</p></div>
+            <div style="display: inline-block;"><img src="smile.jpg" height="50px">
+                    <h2>18</h2><p>Happy Circle</p></div>
+            <div style="display: inline-block;"><img src="projects.jpg" height="50px">
+                        <h2>23</h2><p>Projects Finished</p></div>
+        </div>
+    </div>
+    <div class="blog" id="blog">
+        <h1 style="text-align: center;text-decoration: underline;margin-bottom: 5vw;">OUR BLOG</h1>
+        <div class="insideblog">
+            <div>
+                <img src="block2.jpg" style="margin-bottom: 1vw;">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p><b>Date: </b>30 July 2023</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aut debitis asperiores minima mollitia maiores quo consequuntur qui nam illum.</p>
+                <a href="">Read more >>></a>
+            </div>
+            <div>
+                <img src="blog1.jpg" style="margin-bottom: 1vw;">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p><b>Date: </b>30 July 2023</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aut debitis asperiores minima mollitia maiores quo consequuntur qui nam illum.</p>
+                <a href="">Read more >>></a>
+            </div>
+            <div>
+                <img src="blog3.jpg" style="margin-bottom: 1vw;">
+                <h4>Lorem, ipsum dolor.</h4>
+                <p><b>Date: </b>30 July 2023</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus aut debitis asperiores minima mollitia maiores quo consequuntur qui nam illum.</p>
+                <a href="" >Read more >>></a>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1 style="text-decoration: underline;margin-bottom: 3vw;">CONTACT ME</h1>
+        <div class="in">
+            <img src="/home.png">
+            <h6>LOCATION</h6>
+            <p>Mohali ,punjab</p>
+        </div>
+        <div class="in">
+            <img src="/phone.png">
+            <h6>PHONE</h6>
+            <p>+91 6239780380</p>
+        </div>
+        <div class="in">
+            <img src="/email.png">
+            <h6>EMAIL</h6>
+            <p><a href="mailto:abc@gmail.com">achintya0072.be21@chitkara.edu.in</a></p>
+        </div>
+        <div class="in">
+            <img src="insta.png">
+            <h6>INSTAGRAM</h6>
+            <p><a href="https://www.instagram.com/">achintya_bhatia</a></p>
+        </div>
+        <div class="insidecontact">
+            <form>
+                <p style="font-size: 30px;">Send us message</p>
+                <br>
+                <input type="text"  placeholder="Enter your name*" style="margin: left 3px;margin-right :27% ;width:25%; ">
+                <input type="text"  placeholder="Enter your email id*" style="width: 25%;">
+                <br>
+                <div><input type="text"  placeholder="Text Message*" style="width: 80%;height:200px;margin-top: 3%;margin-bottom: 3%;"></div>
+                <button style="width: 15%;height: 65px;font-size: 20px;background-color: rgb(161, 183, 211);color: white;border:none;box-shadow: 4px 4px rgb(152, 177, 218);">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

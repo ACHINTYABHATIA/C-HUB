@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACHINTYA BHATIA - CPARK</title>
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/accordion.css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">C Park</div>
+      <div class="nav-links">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./pages/tnc.html">Terms & Policies</a>
+        <a href="./pages/about.html">About Us</a>
+        <a href="./pages/fees.html">Fees & Charges</a>
+        <a href="./pages/contact.html">Contact Us</a>
+        <a href="./pages/login.html">Account</a>
+      </div>
+    </nav>
+    <main>
+      <div class="carousel-container">
+        <button class="left-btn">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="right-btn">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="carousel">
+          <img src="./assets/backgrounds/1.jpeg" alt="" />
+          <img src="./assets/backgrounds/2.avif" alt="" />
+          <img src="./assets/backgrounds/3.avif" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <span>
+          <h1>Book a spot</h1>
+          <p>Want to book a spot? Fill in your details below!</p>
+        </span>
+        <form onsubmit="submitForm()">
+          <span>
+            <label for="veh_no">Vehicle Number:</label>
+            <input name="veh_no" type="text" required />
+          </span>
+          <span>
+            <label for="email">Email:</label>
+            <input name="email" type="email" required />
+          </span>
+          <span>
+            <label for="area">Parking area:</label>
+            <select name="area" required>
+              <option>Chitkara University</option>
+              <option>Chandigarh University</option>
+              <option>Panjab University</option>
+            </select>
+          </span>
+          <span>
+            <label for="date_of_parking">Date:</label>
+            <input required name="date_of_parking" type="date" />
+          </span>
+          <button style="margin-top: 1.5rem" class="primary-btn">
+            Submit details
+          </button>
+        </form>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <span>
+          <h1>Reserve your parking spot</h1>
+          <p class="hero-desc">
+            Experience Seamless College Parking with C Park! Reserve Your Spot
+            Online, Eliminate Hassles, and Enjoy Stress-Free Parking Every Time.
+            Book Now for a Smoother Campus Experience!
+          </p>
+        </span>
+        <div class="row">
+          <span class="card">
+            <h2>Convenience</h2>
+            <p>
+              Secure parking in advance, save time, and reduce stress daily.
+            </p>
+          </span>
+          <span class="card">
+            <h2>Peace of mind</h2>
+            <p>
+              Guaranteed spot, worry-free parking, ensuring a hassle-free campus
+              experience.
+            </p>
+          </span>
+          <span class="card">
+            <h2>Efficiency</h2>
+            <p>
+              Effortless online reservations, optimal space utilization, and
+              seamless college parking solutions.
+            </p>
+          </span>
+        </div>
+        <button
+          class="primary-btn"
+          onclick="window.location.href='./pages/benefits.html'"
+        >
+          View More
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <span>
+          <h1>Parking fee</h1>
+          <p class="hero-desc">
+            A brief overview of the parking fee in the form of passes. We offer
+            monthly, daily and hourly parking passes along with valet parking
+            options too!
+          </p>
+        </span>
+        <div class="row">
+          <div class="card">
+            <div class="card-heading">
+              <h1>Daily Plan</h1>
+              <p class="starts-at">Starts at ₹100/day</p>
+            </div>
+            <div class="plan-container">
+              <p>Reserved spot</p>
+              ❌
+            </div>
+            <div class="plan-container">
+              <p>Skip queue</p>
+              ❌
+            </div>
+            <div class="plan-container">
+              <p>Guaranteed Spot</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Priority service</p>
+              ❌
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-heading">
+              <h1>Monthly Plan</h1>
+              <p class="starts-at">Starts at ₹1699/pm</p>
+            </div>
+            <div class="plan-container">
+              <p>Reserved spot</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Skip queue</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Guaranteed Spot</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Priority service</p>
+              ✅
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-heading">
+              <h1>Hourly Plan</h1>
+              <p class="starts-at">Starts at ₹10/hr</p>
+            </div>
+            <div class="plan-container">
+              <p>Reserved spot</p>
+              ❌
+            </div>
+            <div class="plan-container">
+              <p>Skip queue</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Guaranteed Spot</p>
+              ✅
+            </div>
+            <div class="plan-container">
+              <p>Priority service</p>
+              ❌
+            </div>
+          </div>
+        </div>
+        <button
+          class="primary-btn"
+          onclick="window.location.href = './pages/fees.html'"
+        >
+          Learn More
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <h1>Gallery</h1>
+        <div class="row">
+          <div class="img-container">
+            <img src="./assets/backgrounds/chandigarh university.jpeg" alt="" />
+            <div>
+              <h2>Underground parking</h2>
+              <p>
+                <i class="fa-solid fa-location-pin"></i>
+                Chandigarh University, Punjab
+              </p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./assets/backgrounds/chitkara university .jpeg" alt="" />
+            <div>
+              <h2>Parking - 2</h2>
+              <p>
+                <i class="fa-solid fa-location-pin"></i>
+                Chitkara University, Rajpura, Punjab
+              </p>
+            </div>
+          </div>
+          <div class="img-container">
+            <img src="./assets/backgrounds/punjab university.jpeg" alt="" />
+            <div>
+              <h2>Parking - 1</h2>
+              <p>
+                <i class="fa-solid fa-location-pin"></i>
+               Punjab University, Punjab
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="primary-btn"
+          onclick="window.location.href = './pages/gallery.html'"
+        >
+          View More
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <h1>Reviews</h1>
+        <div class="row">
+          <div class="card with-img">
+            <div class="picture-container">
+              <img src="./assets/backgrounds/ashish.jpeg" alt="" />
+              <span>
+                <h3>Aasheesh</h3>
+                <p>Student at Chandigarh University</p>
+              </span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              minus beatae omnis et labore eveniet eum provident quis ipsam enim
+              a, quidem nostrum aliquam vitae!
+            </p>
+          </div>
+          <div class="card with-img">
+            <div class="picture-container">
+              <img src="./assets/backgrounds/aman.jpeg" alt="" />
+              <span>
+                <h3>Aman</h3>
+                <p>Student at Chitkara University</p>
+              </span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              minus beatae omnis et labore eveniet eum provident quis ipsam enim
+              a, quidem nostrum aliquam vitae!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr />
+      </div>
+      <div class="container">
+        <span>
+          <h1>FAQs</h1>
+          <p class="hero-desc">
+            Look at some frequently asked questions by our daily users. Click
+            the button to look at all of the questions that we have been asked
+            so far
+          </p>
+        </span>
+        <div class="parent-accordion-container">
+          <div class="accordion-container">
+            <div class="accordion-heading">
+              <p class="accordion-title">Is it safe?</p>
+              <i class="fa-solid fa-chevron-circle-right"> </i>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                ipsum possimus deleniti provident vitae iure accusantium? Ipsam
+                maxime, aliquid maiores quasi eaque nulla obcaecati odio iusto,
+                possimus iure ea omnis officia labore deleniti velit rerum illo
+                odit exercitationem repellendus totam dicta doloremque sed!
+                Doloremque magni harum enim quasi est assumenda.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-container">
+            <div class="accordion-heading">
+              <p class="accordion-title">What if I leave the car overnight?</p>
+              <i class="fa-solid fa-chevron-circle-right"> </i>
+            </div>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                ipsum possimus deleniti provident vitae iure accusantium? Ipsam
+                maxime, aliquid maiores quasi eaque nulla obcaecati odio iusto,
+                possimus iure ea omnis officia labore deleniti velit rerum illo
+                odit exercitationem repellendus totam dicta doloremque sed!
+                Doloremque magni harum enim quasi est assumenda.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="primary-btn faq-btn"
+          onclick="window.location.href = './pages/faqs.html'"
+        >
+          View all FAQs
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div class="footer-logo">C Park</div>
+        <pre class="address">
+         Btech Cse 3 year
+         CHITKARA UNIVERSITY
+        </pre>
+        <div class="contact-details">
+          <span>
+            <i class="fa-solid fa-phone"></i>
+            +91 6239780380
+          </span>
+          <span>
+            <i class="fa-solid fa-mail-bulk"></i>
+            <a href="#">achintya0072.be21@chitkara.edu.in <br> 2110990072</a>
+          </span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="quick-links">
+          <h1>NEW!</h1>
+          <a href="./pages/blog.html">Blog</a>
+          <a href="https://www.npci.org.in/what-we-do/netc-fastag/product-overview">FastTag</a>
+          <a href="./pages/scanner.html">User Scanner </a>
+          <a href="./pages/er.html">Portfolio</a>
+        </div>
+        <div class="quick-links">
+          <h1>Quick links</h1>
+          <a href="./pages/contact.html">Contact us</a>
+          <a href="./pages/complaint.html">Lodge a complaint</a>
+          <a href="./pages/partner.html">Become a partner</a>
+        </div>
+        <div class="quick-links">
+          <h1>User privacy</h1>
+          <a href="./pages/tnc.html">Terms & Conditions</a>
+          <a href="./pages/sponsors.html">Sponsors</a>
+          <a href="./pages/benefits.html">Benefits</a>
+        </div>
+        <div class="quick-links">
+          <h1>Sitemap</h1>
+          <a href="./pages/gallery.html">Gallery</a>
+          <a href="./pages/fees.html">Fee & Charges</a>
+          <a href="./pages/registration.html">Register your vehicle</a>
+          <a href="./pages/login.html">Login</a>
+          <a href="./pages/signup.html">Signup</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/home.js"></script>
+    <script src="./scripts/accrodion.js"></script>
+  </body>
+</html>

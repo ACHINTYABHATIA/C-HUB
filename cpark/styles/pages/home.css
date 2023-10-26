@@ -1,0 +1,147 @@
+.carousel {
+  width: 100%;
+  height: 35rem;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 35rem;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.carousel-container button {
+  background-color: transparent;
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  bottom: 0;
+  outline: none;
+  border: none;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.carousel-container button i {
+  font-size: 3rem;
+  color: white;
+}
+
+.carousel-container .left-btn {
+  left: 0;
+  background-image: linear-gradient(
+    to left,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5) 150%
+  );
+}
+
+.carousel-container .right-btn {
+  right: 0;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    rgba(0, 0, 0, 0.5) 150%
+  );
+}
+
+.container .hero-desc {
+  max-width: 45rem;
+  text-align: center;
+}
+
+.container .row {
+  width: fit-content;
+  gap: 1.25rem;
+}
+
+.row .card {
+  background-color: rgba(0, 0, 0, 0.01);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  user-select: none;
+}
+
+.card .card-heading {
+  margin-bottom: 1.5rem;
+}
+
+.card-heading h1 {
+  margin-bottom: 0;
+}
+
+.card .starts-at {
+  opacity: 0.5;
+  font-size: 0.95rem;
+  margin: 0.25rem 0;
+}
+
+.card .plan-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.row .img-container {
+  width: 25rem;
+  width: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img-container h2 {
+  margin: 0;
+  width: fit-content;
+}
+
+.img-container img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form span {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+span input,
+span select {
+  flex: 1;
+  font-size: 1.15rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+span label {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
